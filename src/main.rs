@@ -1,3 +1,10 @@
+//
+// Simple P2 LED blinker
+// Written by Eric R. Smith <eric.smith@collabora.com>
+// Copyright 2024 Collabora Ltd.
+// SPDX-License-Identifier: MIT
+//
+
 #![no_main]
 #![no_std]
 

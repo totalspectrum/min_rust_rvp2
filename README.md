@@ -1,0 +1,16 @@
+Here is a minimal example of blinking an LED on a P2 Eval board using Rust. This is currently just a proof of concept: actually doing useful things with Rust will take more work.
+
+To use it, you'll have to have Rust installed on your host computer via `rustup`. I used a PC running Linux (Debian 12 in fact); I'm not sure how easy/hard it would be to reproduce this under Windows, although using Windows Subsystem for Linux (WSL) it should be straightforward.
+
+Add support for cross compilation by doing:
+```
+rustup default stable
+rustup target add riscv32-imacunknown-none-elf
+cargo install cargo-binutils
+```
+
+I'm grateful to my employer, Collabora (www.collabora.com) for giving me time to learn Rust. This work is partially sponsored by them, and is:
+
+Copyright 2024 Collabora Ltd.
+SPDX-License-Identifier: MIT
+
