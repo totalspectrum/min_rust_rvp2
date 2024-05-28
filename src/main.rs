@@ -20,7 +20,7 @@ fn panic(_panic: &PanicInfo<'_>) -> ! {
 pub unsafe extern "C" fn _start() -> ! {
   loop {
     pintoggle(57);
-    delay(20_000_000);
+    delay(40_000_000);
   }
 }
 
