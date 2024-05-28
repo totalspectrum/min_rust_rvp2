@@ -9,10 +9,8 @@ rustup target add riscv32-imacunknown-none-elf
 cargo install cargo-binutils
 ```
 
-The engine that makes all of this work is my own riscvp2 project (https://github.com/totalspectrum/riscvpt) which is a just-in-time compiler from the RISC-V instruction set (specifically the rv32imac one) to the Parallax Propeller P2. That's the "glue" that makes all of this work: Rust is compiling for the RISC-V, and a small stub gets linked in to make that work on the P2.
+The engine underlying this work is my own riscvp2 project (https://github.com/totalspectrum/riscvpt) which is a just-in-time compiler from the RISC-V instruction set (specifically the rv32imac one) to the Parallax Propeller P2. That's the "glue" that makes all of this work: Rust is compiling for the RISC-V, and a small stub gets linked in to make the code run on the P2.
 
-I'm grateful to my employer, Collabora (www.collabora.com) for giving me time to learn Rust. This work is partially sponsored by them, and is:
+I created this by more-or-less following the Rust Embedonomicon (https://docs.rust-embedded.org/embedonomicon/preface.html) which is an excellent resource for very low level programming.
 
-Copyright 2024 Collabora Ltd.
-SPDX-License-Identifier: MIT
-
+I'm grateful to my employer, Collabora (www.collabora.com) for giving me time to learn Rust.
